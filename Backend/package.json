@@ -4,11 +4,13 @@
   "description": "Basic E comm project to see over all working",
   "main": "main.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "mongoose": "^8.5.2",
     "nodemon": "^3.1.4"
