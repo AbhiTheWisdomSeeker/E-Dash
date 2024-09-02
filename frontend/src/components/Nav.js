@@ -13,6 +13,9 @@ const Nav = () => {
 
     return (
         <div className='nav-bor'>
+            
+            <img className='logo' src={require('./logo/logo.png')} ></img>
+      
             {auth?
             <ul className="nav-ul">
                 <li ><Link to="/">Home</Link></li>
@@ -27,7 +30,7 @@ const Nav = () => {
 
             </ul>
             :
-            <ul className="nav-ul">
+            <ul className="nav-ul nav-right">
             <li><Link to="SignUp">SignUP</Link>
                     </li>
                     <li><Link to="Login">Login</Link></li>

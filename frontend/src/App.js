@@ -6,6 +6,7 @@ import SignUP from './components/SignUp.js';
 import './components/PrivateCom';
 import Private from './components/PrivateCom';
 import Login from './components/Login.js';
+import Products from './components/Products.js'
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
         <Routes>
           <Route element={<Private/>}>
           <Route path="/" element={<h1>Home Page</h1>} />
-          <Route path='Products' element={<h1>Add Products</h1>} />
+          <Route path='Products' element={<Products/>} />
           <Route path="Update" element={<h1>Update Products page</h1>} />
           <Route path="About" element={<h1>about page</h1>} />
           <Route path="Profile" element={<h1>Profile page</h1>} />

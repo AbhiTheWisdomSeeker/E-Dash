@@ -2,6 +2,7 @@ const express = require("express");
 require('./db/config');
 const User = require('./db/user');
 const cors = require('cors')
+const Products = require('./db/product')
 
 const app = express();
 
@@ -33,6 +34,12 @@ app.post("/login", async (req, resp) => {
     else {
         (resp.status(400).send({ message: "invalid email or password" }));
     }
+})
+
+app.post("/Product",async (req,resp)=>{
+    const product = new Products(req.body);
+    const result = await product.save();
+    resp.send(result);
 })
 
 app.listen(8000);
