@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "mongoose": "^8.5.3",
+    "nodemon": "^3.1.4"
+  },
+  "name": "e-dash",
+  "version": "1.0.0",
+  "description": "This is a very BeginerFriendly project that utilse the Basic Knowledge of MERN",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/AbhiTheWisdomSeeker/E-Dash"
+  },
+  "author": "Abhishek",
+  "license": "ISC"
+}
