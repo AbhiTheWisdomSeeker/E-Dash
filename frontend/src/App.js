@@ -7,6 +7,8 @@ import './components/PrivateCom';
 import Private from './components/PrivateCom';
 import Login from './components/Login.js';
 import Products from './components/Products.js'
+import ProductList from './components/ProductList.js';
+import Update from './components/Update.js';
 
 function App() {
 
@@ -19,9 +21,10 @@ function App() {
 
         <Routes>
           <Route element={<Private/>}>
-          <Route path="/" element={<h1>Home Page</h1>} />
-          <Route path='Products' element={<Products/>} />
-          <Route path="Update" element={<h1>Update Products page</h1>} />
+          <Route path="/" element={<ProductList/>} />
+          <Route path='AddProducts' element={<Products/>} />
+          <Route path="ViewProducts" element={<h1>These are Your Products</h1>}/>
+          <Route path="Update/:id" element={<Update/>} />
           <Route path="About" element={<h1>about page</h1>} />
           <Route path="Profile" element={<h1>Profile page</h1>} />
           <Route path="Logout" element={<h1>logout page</h1>} />
