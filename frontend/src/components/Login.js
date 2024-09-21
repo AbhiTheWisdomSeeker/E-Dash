@@ -16,7 +16,8 @@ const Login = () => {
             method: 'post',
             body: JSON.stringify({ email, password }),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                authorization: `bearer ${JSON.parse(localStorage.getItem('auth'))}`
             }
         });
         result = await result.json();
